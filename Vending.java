@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class Vending {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int balance = 10000;
-        int change = 0;
-        List<String> items = Arrays.asList("Coke: $2", "Sprite: $2", "Chips: $3", "Fruit Snacks: $1", "M&Ms: $1");
-        int coke = 2;
-        int sprite = 2;
+        List<String> items = Arrays.asList("Coke: $4", "Sprite: $4", "Chips: $3", "Fruit Snacks: $2", "M&Ms: $2");
+        int coke = 4;
+        int sprite = 4;
         int chips = 3;
-        int fruitSnacks = 1;
-        int mms = 1;
+        int fruitSnacks = 2;
+        int mms = 2;
 
         System.out.println(
                 "Welcome! Only $1 bills are accepted. Choose an item to buy: \n"
@@ -222,73 +220,7 @@ public class Vending {
 
         }
 
-        // if (chosenItem == 2) {
-        // System.out.println("Select '1' to confirm purchase \n Select '2' to cancel
-        // purchase");
 
-        // int confirm = input.nextInt();
-
-        // while (confirm != 1 || confirm != 2) {
-        // if (confirm == 1) {
-
-        // }
-
-        // if (confirm == 2) {
-
-        // }
-        // }
-        // }
-
-        // if (chosenItem == 3) {
-        // System.out.println("Select '1' to confirm purchase \n Select '2' to cancel
-        // purchase");
-
-        // int confirm = input.nextInt();
-
-        // while (confirm != 1 || confirm != 2) {
-        // if (confirm == 1) {
-
-        // }
-
-        // if (confirm == 2) {
-
-        // }
-        // }
-        // }
-
-        // if (chosenItem == 4) {
-        // System.out.println("Select '1' to confirm purchase \n Select '2' to cancel
-        // purchase");
-
-        // int confirm = input.nextInt();
-
-        // while (confirm != 1 || confirm != 2) {
-        // if (confirm == 1) {
-
-        // }
-
-        // if (confirm == 2) {
-
-        // }
-        // }
-        // }
-
-        // if (chosenItem == 5) {
-        // System.out.println("Select '1' to confirm purchase \n Select '2' to cancel
-        // purchase");
-
-        // int confirm = input.nextInt();
-
-        // while (confirm != 1 || confirm != 2) {
-        // if (confirm == 1) {
-
-        // }
-
-        // if (confirm == 2) {
-
-        // }
-        // }
-        // }
     }
 
 }
