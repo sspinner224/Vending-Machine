@@ -12,6 +12,7 @@ public class Vending {
         int fruitSnacks = 2;
         int mms = 2;
 
+        // Greeting user and giving options
         System.out.println(
                 "Welcome! Only $1 bills are accepted. Choose an item to buy: \n"
                         + items);
@@ -22,11 +23,14 @@ public class Vending {
 
         // If Coke is selected
         if (chosenItem == 1) {
+
+            // Display user snack choice
             System.out.println("You chose " + items.get(chosenItem - 1) + ".");
             System.out.println("Please enter your amount of money. In $1 bills. ");
 
             int amountBills = input.nextInt();
 
+            // Purchase confirmation
             System.out.println("\n Select '1' to confirm purchase \n Select '2' to cancel purchase");
 
             int confirm = input.nextInt();
@@ -36,6 +40,7 @@ public class Vending {
                 confirm = input.nextInt();
             }
 
+            // Different displayed messages, based on cash entered
             if (confirm == 1) {
                 if (amountBills < coke) {
                     System.out.println("Please insert the correct amount of money.");
@@ -53,6 +58,7 @@ public class Vending {
 
             }
 
+            // Cancellation message displayed
             if (confirm == 2) {
                 System.out.println("Transaction canceled. Here is your full refund of " + amountBills
                         + " dollars. Come again soon!");
@@ -219,7 +225,6 @@ public class Vending {
             }
 
         }
-
 
     }
 
